@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>HackLab30  - SaaS Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="display-6 text-primary m-0"><i class="fas fa-envelope me-3"></i>HackLab30 </h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link active">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="feature.html" class="dropdown-item">Features</a>
+                                <a href="pricing.html" class="dropdown-item">Pricing</a>
+                                <a href="blog.html" class="dropdown-item">Blog</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                    <a href="#" class="btn btn-light border border-primary rounded-pill text-primary py-2 px-4 me-4">Log In</a>
+                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+         <!-- Header Start -->
+         <div class="container-fluid bg-breadcrumb">
+            <ul class="breadcrumb-animation">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="container text-center py-5" style="max-width: 900px;">
+
+                <h3 class="display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Course Overview</h1>
+                <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-primary">Course Overview</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <!-- About Start -->
+        <div class="container-fluid overflow-hidden py-2 mt-1">
+            <div class="container py-2">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
+                    <h4 class="text-primary">30-Day Ethical Hacking Bootcamp</h4>
+                    <h1 class="display-5 mb-4">Ready to learn the skills that will get you into tech?</h1>
+                    <p class="mb-0">This course is designed to teach aspiring ethical hackers the fundamentals in 30 days. Each module covers a specific topic with video lectures, hands-on labs, quizzes, and assignments. It balances theory, practical application, and a mindset for success.
+                    </p>
+                    <p class="my-3">
+                        Before starting each day, remind yourself:
+                        <span class="text-danger">
+"I am here to learn, grow, and contribute ethically. Every challenge I face makes me stronger, and every mistake I make teaches me something valuable."</span>
+
+                    </p>
+                    <p>By fostering this mental state, you’ll not only absorb technical skills but also build the resilience and ethics required to excel in the field.</p>
+                </div>
+
+
+                <div class="container py-5">
+                    <h1 class="text-center mb-4">Course Modules</h1>
+                    <div class="accordion" id="courseDetailsAccordion">
+                        <!-- Week 1: Foundation Building -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="week1Header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week1" aria-expanded="true" aria-controls="week1">
+                                    Week 1: Foundation Building
+                                </button>
+                            </h2>
+                            <div id="week1" class="accordion-collapse collapse show" aria-labelledby="week1Header" data-bs-parent="#courseDetailsAccordion">
+                                <div class="accordion-body">
+                                    <div class="row g-3">
+                                        <!-- Day 1-2 Card -->
+                                        <div class="col-md-6">
+                                            <div class="card h-100">
+                                                <div class="card-header bg-primary text-white">
+                                                    Day 1-2: Learn Linux Commands
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Building the Foundation</h5>
+                                                    <ul class="goal-task">
+                                                        <li><strong>Task:</strong> Install Linux (Ubuntu or Kali Linux).</li>
+                                                        <li><strong>Goal:</strong> Get familiar with the Linux environment.</li>
+                                                    </ul>
+                                                    <hr/>
+                                               
+                                                    <h5 class="card-title">Video Lectures</h5>
+                                                    <ul>
+                                                        <li>Basics of Linux OS</li>
+                                                        <li>Key commands for file management, networking, and permissions</li>
+                                                    </ul>
+                                                    <h5>Lab Exercises:</h5>
+                                                    <ul>
+                                                        <li>Create, edit, and delete files</li>
+                                                        <li>Simulate remote login with SSH</li>
+                                                    </ul>
+                                                    <p><strong>Quiz:</strong> Linux command challenges</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Day 3-4 Card -->
+                                        <div class="col-md-6">
+                                            <div class="card h-100">
+                                                <div class="card-header bg-success text-white">
+                                                    Day 3-4: Master Networking Basics
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Video Lectures</h5>
+                                                    <ul>
+                                                        <li>TCP/IP model, DNS, ports, and protocols</li>
+                                                        <li>Tools: ping, netstat, traceroute</li>
+                                                    </ul>
+                                                    <h5>Lab Exercises:</h5>
+                                                    <ul>
+                                                        <li>Simulate traffic and analyze it using Wireshark</li>
+                                                        <li>Assignment: Map a network topology</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Additional days of Week 1 -->
+                                        <div class="col-6 mt-3">
+                                            <div class="card">
+                                                <div class="card-header bg-warning text-dark">
+                                                    Day 5-7: Study OWASP Top 10
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Video Lectures</h5>
+                                                    <ul>
+                                                        <li>Overview of OWASP Top 10 vulnerabilities</li>
+                                                        <li>Case studies of real-world attacks</li>
+                                                    </ul>
+                                                    <h5>Lab Exercises:</h5>
+                                                    <ul>
+                                                        <li>Test vulnerabilities in DVWA and Juice Shop (XSS, SQLi, etc.)</li>
+                                                        <li>Quiz: Identify vulnerabilities in scenarios</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Week 2: Core Tools -->
+                        <div class="accordion-item w2">
+                            <h2 class="accordion-header" id="week2Header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week2" aria-expanded="false" aria-controls="week2">
+                                    Week 2: Core Tools
+                                </button>
+                            </h2>
+                            <div id="week2" class="accordion-collapse collapse" aria-labelledby="week2Header" data-bs-parent="#courseDetailsAccordion">
+                                <div class="accordion-body">
+                                    <div class="row g-3">
+                                        <!-- Day 1-2 Card -->
+                                        <div class="col-md-6">
+                                            <div class="card h-100">
+                                                <div class="card-header bg-primary text-white">
+                                                    Day 8-9: Learn Nmap for Scanning
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Video Lectures</h5>
+                                                    <ul>
+                                                        <li>Introduction to Nmap</li>
+                                                        <li>Types of scans (ping, SYN, service)</li>
+                                                    </ul>
+                                                    <h5>Lab Exercises:</h5>
+                                                    <ul>
+                                                        <li>Scan a simulated network, identify live hosts, and enumerate services</li>
+                                                    </ul>
+                                                    <p><strong>Assignment:</strong>Create a network report</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Day 3-4 Card -->
+                                        <div class="col-md-6">
+                                            <div class="card h-100">
+                                                <div class="card-header bg-success text-white">
+                                                    Day 10-11: Use Burp Suite for Web Testing
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Video Lectures</h5>
+                                                    <ul>
+                                                        <li>Setting up Burp Suite</li>
+                                                        <li>Intercepting and modifying HTTP requests</li>
+                                                    </ul>
+                                                    <h5>Lab Exercises:</h5>
+                                                    <ul>
+                                                        <li>Perform a brute-force login attempt</li>
+                                                    </ul>
+                                                    <p><strong>Quiz:</strong>Analyze a captured HTTP request</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Additional days of Week 1 -->
+                                        <div class="col-6 mt-3">
+                                            <div class="card">
+                                                <div class="card-header bg-warning text-dark">
+                                                    Day 12-13: Explore Metasploit for Exploitation
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Video Lectures</h5>
+                                                    <ul>
+                                                        <li>Basics of Metasploit Framework</li>
+                                                        <li>Exploiting vulnerabilities in Windows</li>
+                                                    </ul>
+                                                    <h5>Lab Exercises:</h5>
+                                                    <ul>
+                                                        <li>Use EternalBlue exploit on a vulnerable VM</li>
+                                                    </ul>
+                                                    <p><strong>Assignment: </strong>Document the exploit process</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6 mt-3">
+                                            <div class="card">
+                                                <div class="card-header bg-warning text-dark">
+                                                    Day 14: Mid-Course Review and Q&A
+                                                </div>
+                                                <div class="card-body">
+                                                      <p><strong>Live Session: </strong>Review key concepts and address doubts</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                              <!-- Week 3: Advanced Tools -->
+                              <div class="accordion-item w3">
+                                <h2 class="accordion-header" id="week3Header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week3" aria-expanded="false" aria-controls="week3">
+                                        Week 3: Advanced Tools
+                                    </button>
+                                </h2>
+                                <div id="week3" class="accordion-collapse collapse" aria-labelledby="week3Header" data-bs-parent="#courseDetailsAccordion">
+                                    <div class="accordion-body">
+                                        <div class="row g-3">
+                                            <!-- Day 1-2 Card -->
+                                            <div class="col-md-6">
+                                                <div class="card h-100">
+                                                    <div class="card-header bg-primary text-white">
+                                                        Day 15-16: Practice SQLmap for Database Testing
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Video Lectures</h5>
+                                                        <ul>
+                                                            <li>SQL injection explained</li>
+                                                            <li>Using SQLmap for automated testing</li>
+                                                        </ul>
+                                                        <h5>Lab Exercises:</h5>
+                                                        <ul>
+                                                            <li>Extract database information from DVWA</li>
+                                                        </ul>
+                                                        <p><strong>Quiz:</strong>  Test SQL injection scenarios</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Day 3-4 Card -->
+                                            <div class="col-md-6">
+                                                <div class="card h-100">
+                                                    <div class="card-header bg-success text-white">
+                                                        Day 17-18: Solve Labs on TryHackMe or Hack The Box
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Interactive Labs:</h5>
+                                                        <ul>
+                                                            <li>Beginner and intermediate challenges</li>
+                                                        </ul>
+                                                        <h5>Assignment:</h5>
+                                                        <ul>
+                                                            <li>Write a report on a completed challenge</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Additional days of Week 1 -->
+                                            <div class="col-6 mt-3">
+                                                <div class="card">
+                                                    <div class="card-header bg-warning text-dark">
+                                                        Day 19-20: Join a Cybersecurity Community
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Video Lectures</h5>
+                                                        <ul>
+                                                            <li>Importance of networking and knowledge sharing</li>
+                                                            <li>How to join and contribute to communities like Reddit, Discord, and LinkedIn groups</li>
+                                                        </ul>
+                                                        <h5>Activity:</h5>
+                                                        <ul>
+                                                            <li>Test vulnerabilities in DVWA and Juice Shop (XSS, SQLi, etc.)</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>Join a forum and share your learnings
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- Week 4: Staying Ahead -->
+                             <div class="accordion-item w4">
+                                <h2 class="accordion-header" id="week4Header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week4" aria-expanded="false" aria-controls="week4">
+                                        Week 4: Staying Ahead
+                                    </button>
+                                </h2>
+                                <div id="week4" class="accordion-collapse collapse" aria-labelledby="week4Header" data-bs-parent="#courseDetailsAccordion">
+                                    <div class="accordion-body">
+                                        <div class="row g-3">
+                                            <!-- Day 1-2 Card -->
+                                            <div class="col-md-6">
+                                                <div class="card h-100">
+                                                    <div class="card-header bg-primary text-white">
+                                                        Day 21-23: Vulnerability Research and Monitoring
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Video Lectures</h5>
+                                                        <ul>
+                                                            <li>Tools for vulnerability tracking (e.g., CVE databases, RSS feeds)</li>
+                                                            <li>Staying updated with security blogs and tools</li>
+                                                        </ul>
+                                                        <h5>Lab Exercises:</h5>
+                                                        <ul>
+                                                            <li>Simulate exploitation of a newly discovered vulnerability in a controlled lab</li>
+                                                        </ul>
+                                                        <!-- <p><strong>Quiz:</strong> Linux command challenges</p> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Day 24-26 Card -->
+                                            <div class="col-md-6">
+                                                <div class="card h-100">
+                                                    <div class="card-header bg-success text-white">
+                                                        Day 24-26: Real-World Scenarios and Final Lab
+                                                    </div>
+                                                    <div class="card-body">
+                                                      <h5>Comprehensive Lab Challenge</h5>
+                                                        <ul>
+                                                            <li>Perform reconnaissance, scanning, exploitation, and reporting</li>
+                                                            <li>Use tools learned throughout the course</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Additional days of Week 1 -->
+                                            <div class="col-6 mt-3">
+                                                <div class="card">
+                                                    <div class="card-header bg-warning text-dark">
+                                                        Day 27: Report Writing and Ethics
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Video Lectures</h5>
+                                                        <ul>
+                                                            <li>Writing effective penetration test reports</li>
+                                                            <li>CEthics and responsible disclosure</li>
+                                                        </ul>
+                                                        <h5> <strong>Assignment</strong>: Create a report based on the final lab</h5>
+                                                        <!-- <ul>
+                                                            <li>Test vulnerabilities in DVWA and Juice Shop (XSS, SQLi, etc.)</li>
+                                                            <li>Quiz: Identify vulnerabilities in scenarios</li>
+                                                        </ul> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+
+                                       <!-- Week 5: Final Review and Certification -->
+                                       <div class="accordion-item w5">
+                                        <h2 class="accordion-header" id="week5Header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week5" aria-expanded="false" aria-controls="week5">
+                                                Week 5: Final Review and Certification
+                                            </button>
+                                        </h2>
+                                        <div id="week5" class="accordion-collapse collapse" aria-labelledby="week5Header" data-bs-parent="#courseDetailsAccordion">
+                                            <div class="accordion-body">
+                                                <div class="row g-3">
+                                                    <!-- Day 1-2 Card -->
+                                                    <div class="col-md-6">
+                                                        <div class="card h-100">
+                                                            <div class="card-header bg-primary text-white">
+                                                                Day 29: Course Recap and Mock Test
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Video Lectures</h5>
+                                                                <ul>
+                                                                    <li>Summary of all key concepts</li>
+                                                                    <li>Mock test covering theoretical and practical topics</li>
+                                                                </ul>
+                                                                <h5>Lab Exercises:</h5>
+                                                                <ul>
+                                                                    <li>Create, edit, and delete files</li>
+                                                                    <li>Simulate remote login with SSH</li>
+                                                                </ul>
+                                                                <p><strong>Quiz:</strong> Linux command challenges</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Day 3-4 Card -->
+                                                    <div class="col-md-6">
+                                                        <div class="card h-100">
+                                                            <div class="card-header bg-success text-white">
+                                                                Day 30: Final Exam and Certificate Issuance
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Video Lectures</h5>
+                                                                <ul>
+                                                                    <li>2-hour online exam (multiple-choice and practical challenges)
+                                                                        </li>
+                                                                    <li>Issue a certificate of completion for passing students</li>
+                                                                </ul>
+                                                                <h5>Lab Exercises:</h5>
+                                                                <ul>
+                                                                    <li>Simulate traffic and analyze it using Wireshark</li>
+                                                                    <li>Assignment: Map a network topology</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                           
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+                        <!-- Additional weeks (3, 4, and 5) -->
+                    </div>
+                </div>
+
+                <div class="container mt-5 d-none">
+                    <h2>Day-wise Progress Timeline</h2>
+                    <div class="timeline">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Day 1: Learn Linux Commands</h5>
+                                <p class="card-text">Progress Status: <span class="badge bg-success">Completed</span></p>
+                                <button class="btn btn-primary">Go to Day</button>
+                            </div>
+                        </div>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Day 2: Master Networking Basics</h5>
+                                <p class="card-text">Progress Status: <span class="badge bg-warning">Locked</span></p>
+                                <button class="btn btn-secondary" disabled>Go to Day</button>
+                            </div>
+                        </div>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Day 2: Master Networking Basics</h5>
+                                <p class="card-text">Progress Status: <span class="badge bg-warning">Locked</span></p>
+                                <button class="btn btn-secondary" disabled>Go to Day</button>
+                            </div>
+                        </div>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Day 2: Master Networking Basics</h5>
+                                <p class="card-text">Progress Status: <span class="badge bg-warning">Locked</span></p>
+                                <button class="btn btn-secondary" disabled>Go to Day</button>
+                            </div>
+                        </div>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Day 2: Master Networking Basics</h5>
+                                <p class="card-text">Progress Status: <span class="badge bg-warning">Locked</span></p>
+                                <button class="btn btn-secondary" disabled>Go to Day</button>
+                            </div>
+                        </div>
+                        <!-- Add more day cards as needed -->
+                    </div>
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="RotateMoveLeft">
+                            <img src="img/about-1.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <h4 class="mb-1 text-primary">About Us</h4>
+                        <h1 class="display-5 mb-4">Get Started Easily With a Personalized Product Tour</h1>
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, suscipit itaque quaerat dicta porro illum, autem, molestias ut animi ab aspernatur dolorum officia nam dolore. Voluptatibus aliquam earum labore atque.
+                        </p>
+                        <a href="#" class="btn btn-primary rounded-pill py-3 px-5">About More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+    
+
+
+  
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-dark mb-4">Company</h4>
+                            <a href=""> Why HackLab30 ?</a>
+                            <a href=""> Our Features</a>
+                            <a href=""> Our Portfolio</a>
+                            <a href=""> About Us</a>
+                            <a href=""> Our Blog & News</a>
+                            <a href=""> Get In Touch</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-dark">Quick Links</h4>
+                            <a href=""> About Us</a>
+                            <a href=""> Contact Us</a>
+                            <a href=""> Privacy Policy</a>
+                            <a href=""> Terms & Conditions</a>
+                            <a href=""> Our Blog & News</a>
+                            <a href=""> Our Team</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-dark">Services</h4>
+                            <a href=""> All Services</a>
+                            <a href=""> Promotional Emails</a>
+                            <a href=""> Product Updates</a>
+                            <a href=""> Email Marketing</a>
+                            <a href=""> Acquistion Emails</a>
+                            <a href=""> Retention Emails</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-dark">Contact Info</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> info@hacklab3.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>HL30 </a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
