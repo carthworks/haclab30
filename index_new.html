@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>HackLab30 — 30-Day Ethical Hacking Bootcamp</title>
+    <meta name="description"
+        content="Master ethical hacking in 30 days with HackLab30 — video lessons, labs, community, certificate." />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        :root {
+            --brand: #0d6efd;
+            --muted: #6c757d;
+            --bg: #f8f9fa;
+            --max-width: 1200px;
+            font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial
+        }
+
+        body {
+            background: var(--bg);
+            color: #212529;
+            scroll-behavior: smooth
+        }
+
+        a {
+            color: inherit
+        }
+
+        a:hover {
+            text-decoration: none
+        }
+
+        /* topbar & navbar */
+        .site-topbar {
+            background: #0b1220;
+            color: #fff;
+            padding: .35rem 0
+        }
+
+        .site-topbar .contact a {
+            color: #fff;
+            margin-right: 1rem
+        }
+
+        .site-topbar .social a {
+            color: #fff;
+            margin-left: .35rem
+        }
+
+        .navbar {
+            background: #fff
+        }
+
+        .hero {
+            background: linear-gradient(90deg, rgba(13, 110, 253, .06), rgba(13, 110, 253, .02));
+            padding: 3.5rem 0;
+            margin-top: 4rem;
+        }
+
+        .card-cta {
+            border-radius: 40px
+        }
+
+        .service-icon {
+            font-size: 30px;
+            color: var(--brand)
+        }
+
+        .footer {
+            background: #071226;
+            color: #cbd5e1;
+            padding: 3rem 0
+        }
+
+        .footer a {
+            color: #cbd5e1
+        }
+
+        .copyright {
+            background: #031423;
+            color: #9fb0c8;
+            padding: .85rem 0
+        }
+
+        .back-to-top {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: none;
+            z-index: 2000
+        }
+    </style>
+    <link rel="stylesheet" href="css/custom-enhancements.css">
+</head>
+
+<body>
+    <!-- topbar -->
+    <div class="site-topbar d-none d-lg-block fixed-top" style="z-index:1040;">
+        <div class="container" style="max-width:var(--max-width);">
+            <div class="d-flex justify-content-between align-items-center py-2">
+                <div class="contact small">
+                    <a href="mailto:tkarthikeyan@gmail.com"><i
+                            class="fas fa-envelope me-1"></i>tkarthikeyan@gmail.com</a>
+                    <a href="https://wa.me/919486772206" target="_blank"><i class="fab fa-whatsapp ms-3 me-1"></i>+91
+                        9486772206</a>
+                </div>
+                <div class="social">
+                    <a class="btn btn-sm btn-outline-light rounded-circle" href="#" aria-label="facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm btn-outline-light rounded-circle" href="#" aria-label="twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm btn-outline-light rounded-circle" href="#" aria-label="linkedin"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar (offset for topbar) -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top" style="top:48px;z-index:1039;">
+        <div class="container" style="max-width:var(--max-width);">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#"><i
+                    class="fas fa-shield-alt text-primary fs-4"></i><span class="fw-bold">HackLab30</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#course">Course</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div class="d-flex ms-3">
+                    <a class="btn btn-outline-primary me-2 rounded-pill" href="#">Log In</a>
+                    <a class="btn btn-primary rounded-pill" href="#">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero -->
+    <header class="hero">
+        <div class="container" style="max-width:var(--max-width);">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold">30-Day Ethical Hacking Bootcamp</h1>
+                    <p class="lead text-muted">From beginner to ethical hacker in 30 days — hands-on labs, video
+                        lessons, weekly Q&A.</p>
+                    <ul class="mb-4">
+                        <li>Interactive labs (TryHackMe/HackTheBox style)</li>
+                        <li>Weekly live Q&A and mentor feedback</li>
+                        <li>Capstone lab + certificate</li>
+                    </ul>
+                    <a class="btn btn-primary btn-lg card-cta" href="#course">Start Learning</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="img/hero-img-1.png" alt="HackLab30 hero" class="img-fluid" style="max-width:520px" />
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- about -->
+    <section id="about" class="py-5">
+        <div class="container" style="max-width:var(--max-width);">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <h6 class="text-primary">About HackLab30</h6>
+                    <h2 class="fw-bold">Your gateway to ethical hacking</h2>
+                    <p class="text-muted">Practical, ethics-first training that moves from fundamentals (Linux,
+                        networking) to web & network penetration testing, reporting and career guidance.</p>
+                    <a class="btn btn-outline-primary" href="#course">See Course</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/about-1.png" alt="about" class="img-fluid rounded shadow-sm">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services -->
+    <section id="services" class="py-5 bg-white">
+        <div class="container" style="max-width:var(--max-width);">
+            <div class="text-center mb-4">
+                <h6 class="text-primary">Our Service</h6>
+                <h2 class="fw-bold">What we can do for you</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="service-icon me-3"><i class="fas fa-book"></i></div>
+                                <h5 class="mb-0">Education & Training</h5>
+                            </div>
+                            <p class="text-muted">Structured path with guided labs and mentor support.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="service-icon me-3"><i class="fas fa-user-shield"></i></div>
+                                <h5 class="mb-0">Security Consultation</h5>
+                            </div>
+                            <p class="text-muted">Advisory and practical testing for teams and products.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="service-icon me-3"><i class="fas fa-laptop-code"></i></div>
+                                <h5 class="mb-0">Internships & Labs</h5>
+                            </div>
+                            <p class="text-muted">Work on real challenges and build a portfolio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- course with modules accordion -->
+    <section id="course" class="py-5">
+        <div class="container" style="max-width:var(--max-width);">
+            <div class="text-center mb-4">
+                <h6 class="text-primary">Course Overview</h6>
+                <h2 class="fw-bold">30-Day Ethical Hacking Bootcamp</h2>
+                <p class="text-muted">Daily modules, labs, quizzes and a final capstone.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="mb-3 fw-semibold">Details</h5>
+                            <p class="mb-2"><strong>Duration:</strong> 30 days (3–4 hrs/day suggested)</p>
+                            <p class="mb-2"><strong>Format:</strong> Pre-recorded lessons, guided labs, weekly live Q&A,
+                                capstone.</p>
+                            <div class="accordion" id="modulesAccordion">
+
+                                <!-- Week 1 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="w1h"><button class="accordion-button" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#w1">Week 1: Foundation
+                                            Building</button></h2>
+                                    <div id="w1" class="accordion-collapse collapse show"
+                                        data-bs-parent="#modulesAccordion">
+                                        <div class="accordion-body">
+                                            <div class="row g-3">
+                                                <div class="col-md-6">
+                                                    <div class="card h-100">
+                                                        <div class="card-header bg-primary text-white">Day 1-2: Learn
+                                                            Linux Commands</div>
+                                                        <div class="card-body">
+                                                            <h6>Goals</h6>
+                                                            <ul>
+                                                                <li>Install Ubuntu/Kali</li>
+                                                                <li>Basic shell navigation, file ops, permissions</li>
+                                                            </ul>
+                                                            <h6>Lab</h6>
+                                                            <ul>
+                                                                <li>File tasks, SSH simulation</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card h-100">
+                                                        <div class="card-header bg-success text-white">Day 3-4:
+                                                            Networking Basics</div>
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>TCP/IP, DNS, ports</li>
+                                                                <li>Tools: ping, netstat, traceroute</li>
+                                                            </ul>
+                                                            <h6>Lab</h6>
+                                                            <ul>
+                                                                <li>Wireshark basics, network mapping</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-header bg-warning text-dark">Day 5-7: OWASP Top
+                                                            10</div>
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>Overview of OWASP Top10</li>
+                                                                <li>Hands-on XSS/SQLi labs (DVWA/Juice Shop)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Week 2 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="w2h"><button class="accordion-button collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#w2">Week 2: Core
+                                            Tools</button></h2>
+                                    <div id="w2" class="accordion-collapse collapse" data-bs-parent="#modulesAccordion">
+                                        <div class="accordion-body">
+                                            <div class="row g-3">
+                                                <div class="col-md-6">
+                                                    <div class="card h-100">
+                                                        <div class="card-header bg-primary text-white">Day 8-9: Nmap
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>Scan types, host discovery</li>
+                                                                <li>Lab: scan & enumerate services</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card h-100">
+                                                        <div class="card-header bg-success text-white">Day 10-11: Burp
+                                                            Suite</div>
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>Proxy, intercept, modify requests</li>
+                                                                <li>Lab: brute-force and analyze requests</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card">
+                                                        <div class="card-header bg-warning text-dark">Day 12-13:
+                                                            Metasploit</div>
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>Exploit basics</li>
+                                                                <li>Lab: controlled exploitation on vulnerable VM</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Week 3 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="w3h"><button class="accordion-button collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#w3">Week 3:
+                                            Advanced Tools</button></h2>
+                                    <div id="w3" class="accordion-collapse collapse" data-bs-parent="#modulesAccordion">
+                                        <div class="accordion-body">
+                                            <div class="row g-3">
+                                                <div class="col-md-6">
+                                                    <div class="card h-100">
+                                                        <div class="card-header bg-primary text-white">Day 15-16: SQLmap
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>SQLi concepts</li>
+                                                                <li>Lab: extract data from DVWA</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card h-100">
+                                                        <div class="card-header bg-success text-white">Day 17-18:
+                                                            TryHackMe/HTB Labs</div>
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>Hands-on challenge solving</li>
+                                                                <li>Assignment: lab report</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-header bg-warning text-dark">Day 19-20:
+                                                            Community & Networking</div>
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>How to join & contribute</li>
+                                                                <li>Share writeups & build presence</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Week 4 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="w4h"><button class="accordion-button collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#w4">Week 4: Staying
+                                            Ahead</button></h2>
+                                    <div id="w4" class="accordion-collapse collapse" data-bs-parent="#modulesAccordion">
+                                        <div class="accordion-body">
+                                            <div class="row g-3">
+                                                <div class="col-md-6">
+                                                    <div class="card h-100">
+                                                        <div class="card-header bg-primary text-white">Day 21-23:
+                                                            Vulnerability Research</div>
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>Track CVEs, feeds, blogs</li>
+                                                                <li>Lab: simulate new CVE</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card h-100">
+                                                        <div class="card-header bg-success text-white">Day 24-26: Final
+                                                            Lab</div>
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>Recon → Exploit → Report</li>
+                                                                <li>Use all tools learned</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-header bg-warning text-dark">Day 27: Reporting
+                                                            & Ethics</div>
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>Write professional pentest reports</li>
+                                                                <li>Responsible disclosure process</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Week 5 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="w5h"><button class="accordion-button collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#w5">Week 5: Final
+                                            Review & Certification</button></h2>
+                                    <div id="w5" class="accordion-collapse collapse" data-bs-parent="#modulesAccordion">
+                                        <div class="accordion-body">
+                                            <div class="row g-3">
+                                                <div class="col-md-6">
+                                                    <div class="card h-100">
+                                                        <div class="card-header bg-primary text-white">Day 29: Recap &
+                                                            Mock Test</div>
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>Full review</li>
+                                                                <li>Mock test (theory + practical)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card h-100">
+                                                        <div class="card-header bg-success text-white">Day 30: Final
+                                                            Exam & Certificate</div>
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>Online practical exam</li>
+                                                                <li>Certificate issuance</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Week 6 (bonus) -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="w6h"><button class="accordion-button collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#w6">Week 6: AI &
+                                            Automation (Bonus)</button></h2>
+                                    <div id="w6" class="accordion-collapse collapse" data-bs-parent="#modulesAccordion">
+                                        <div class="accordion-body">
+                                            <div class="row g-3">
+                                                <div class="col-md-6">
+                                                    <div class="card h-100">
+                                                        <div class="card-header bg-primary text-white">Day 31-32: AI
+                                                            Threat Detection</div>
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>Intro to ML for anomaly detection</li>
+                                                                <li>Lab: simple model to flag suspicious traffic</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card h-100">
+                                                        <div class="card-header bg-success text-white">Day 33-34: n8n
+                                                            Automation</div>
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>Create security workflows (alerts → ticket)</li>
+                                                                <li>Lab: parse scanner results & draft finding</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div> <!-- accordion -->
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="col-lg-4">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body">
+                            <h5>Included</h5>
+                            <ul class="text-muted">
+                                <li>Downloadable cheat-sheets</li>
+                                <li>Lab guides</li>
+                                <li>Community & mentors</li>
+                                <li>Certificate</li>
+                            </ul>
+                            <a class="btn btn-outline-primary w-100 mt-2" href="#contact">Request Batch Info</a>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- faq -->
+    <section id="faq" class="py-5 bg-white">
+        <div class="container" style="max-width:var(--max-width);">
+            <div class="text-center mb-4">
+                <h6 class="text-primary">FAQ</h6>
+                <h2 class="fw-bold">How HackLab30 empowers you</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="accordion" id="faqAcc">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#f1">Is prior knowledge required?</button>
+                            </h2>
+                            <div id="f1" class="accordion-collapse collapse show" data-bs-parent="#faqAcc">
+                                <div class="accordion-body text-muted">No. Course begins with fundamentals and moves to
+                                    advanced topics.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#f2">Career opportunities?</button></h2>
+                            <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                                <div class="accordion-body text-muted">Roles: pentester, security analyst, SOC analyst,
+                                    researcher.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#f3">Is certificate valuable?</button>
+                            </h2>
+                            <div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                                <div class="accordion-body text-muted">Yes—paired with a lab portfolio it improves
+                                    hiring odds.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center justify-content-center"><img src="img/about-1.png"
+                        alt="FAQ" class="img-fluid" style="max-width:420px" /></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="py-5">
+        <div class="container" style="max-width:var(--max-width);">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h4 class="text-primary">Register</h4>
+                    <p class="text-muted">Fill form for batch & pricing details.</p>
+                    <form id="regForm" class="row g-3" novalidate>
+                        <div class="col-md-6"><input class="form-control" name="name" placeholder="Full name" required>
+                        </div>
+                        <div class="col-md-6"><input type="email" class="form-control" name="email" placeholder="Email"
+                                required></div>
+                        <div class="col-md-6"><input class="form-control" name="phone" placeholder="Phone"></div>
+                        <div class="col-md-6"><select class="form-select" name="batch">
+                                <option>Morning</option>
+                                <option>Evening</option>
+                                <option>Weekend</option>
+                            </select></div>
+                        <div class="col-12"><textarea class="form-control" name="message" rows="4"
+                                placeholder="Why learn ethical hacking?"></textarea></div>
+                        <div class="col-12">
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="terms"
+                                    required><label class="form-check-label" for="terms">I agree to terms & will use
+                                    skills ethically</label></div>
+                        </div>
+                        <div class="col-12"><button class="btn btn-primary w-100" type="submit">Register</button></div>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5>Contact</h5>
+                            <p class="mb-1"><i class="fas fa-envelope me-2"></i>tkarthikeyan@gmail.com</p>
+                            <p class="mb-1"><i class="fas fa-phone me-2"></i>+91 9486772206</p>
+                            <p class="text-muted">WhatsApp: <a href="https://wa.me/919486772206">Message us</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container" style="max-width:var(--max-width);">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="text-white">HackLab30</h5>
+                    <p class="small text-white">Practical, ethics-first cybersecurity training — labs, mentorship,
+                        certificate.</p>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="text-white">Links</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#course">Course</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-white">Services</h6>
+                    <ul class="list-unstyled small">
+                        <li>Education & Training</li>
+                        <li>Penetration Testing</li>
+                        <li>Internships</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-white">Contact</h6>
+                    <p class="small mb-1"><i class="fas fa-envelope me-2"></i>tkarthikeyan@gmail.com</p>
+                    <p class="small mb-2"><i class="fas fa-phone me-2"></i>+91 9486772206</p>
+                    <div class="d-flex gap-2"><a class="btn btn-sm btn-primary rounded-circle" href="#"><i
+                                class="fab fa-facebook-f"></i></a><a class="btn btn-sm btn-primary rounded-circle"
+                            href="#"><i class="fab fa-twitter"></i></a><a class="btn btn-sm btn-primary rounded-circle"
+                            href="#"><i class="fab fa-instagram"></i></a><a
+                            class="btn btn-sm btn-primary rounded-circle" href="#"><i
+                                class="fab fa-linkedin-in"></i></a></div>
+                </div>
+            </div>
+            <hr style="border-color:rgba(255,255,255,.06);margin:.75rem 0">
+            <div class="d-flex justify-content-between small  text-white">
+                <div>© <strong>HackLab30</strong> — All rights reserved.</div>
+                <div>Designed with ❤️ for Cybersecurity Enthusiasts</div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright text-center small">Made with care • HackLab30</div>
+    <button id="backToTop" class="btn btn-primary back-to-top rounded-circle"><i class="fa fa-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>/* topbar offset fix for mobile: hide topbar on small screens to avoid overlap */(function () { const topbar = document.querySelector('.site-topbar'); if (window.innerWidth < 992) topbar.classList.add('d-none'); window.addEventListener('resize', () => { if (window.innerWidth < 992) topbar.classList.add('d-none'); else topbar.classList.remove('d-none') });/* back to top */const b = document.getElementById('backToTop'); window.addEventListener('scroll', () => { b.style.display = (window.scrollY > 400) ? 'block' : 'none' }); b.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));/* demo form submit: replace with real API */document.getElementById('regForm').addEventListener('submit', e => { e.preventDefault(); alert('Thanks — we received your request (demo).'); e.target.reset() }); })();</script>
+</body>
+
+</html>
